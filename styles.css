@@ -1,4 +1,40 @@
-/*  your css code here. If applicable */
-:root{
-	background-color:  rgb(135, 206, 235);
+/* Set background color for the entire page */
+:root {
+    background-color: rgb(135, 206, 235);
+}
+
+/* Article with paragraphs */
+article p:first-child {
+    background-color: black;
+    color: white;
+}
+
+article p:nth-child(2) {
+    /* Default styles for the second paragraph, no changes needed */
+}
+
+article p:last-child {
+    color: red;
+}
+
+/* Unordered list styles */
+ul li {
+    background-color: gray;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Odd list items (1st, 3rd, 5th) will have a white background */
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+/* First and last list items should have a font size of 22px */
+ul li:first-child, ul li:last-child {
+    font-size: 22px;
+}
+
+/* Third-to-last item should have a pink background color */
+ul li:nth-last-child(3) {
+    background-color: pink;
 }
